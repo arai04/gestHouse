@@ -1,0 +1,199 @@
+html {
+    font-size: 14px;
+    background-color: whitesmoke;
+}
+
+.header_wrapper {
+    background-color: rgba(0, 0, 0, 1);
+    opacity: .8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 999;
+    padding-left: 50px;
+}
+
+.zdo_drawer_menu {
+    display: none;
+}
+
+
+/*メニュー*/
+
+#nav {
+    display: flex;
+    justify-content: center;
+}
+
+.nav_li {
+    padding-right: 80px;
+    color: #fff;
+    font-weight: lighter;
+    letter-spacing: 2.5px;
+    display: inline-block;
+}
+
+.nav_li_text_top {
+    transition: .3s;
+}
+
+.nav_li:hover {
+    color: darkorange;
+}
+
+.nav_li_text_bottom {
+    color: #999;
+    padding-top: 7px;
+    font-size: .9rem;
+    font-weight: lighter;
+    text-align: center;
+}
+
+
+/*メニュー*/
+
+
+/*テキスト スタイル*/
+
+.text {
+    font-weight: lighter;
+    font-size: 1.2rem;
+    line-height: 35px;
+    font-family: "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", serif;
+}
+
+.text_color1 {
+    color: white;
+    border-color: white;
+}
+
+
+/*テキスト スタイル*/
+
+
+/*footer*/
+
+.footer_wrapper {
+    position: relative;
+    width: 100vw;
+    height: 55vh;
+    background-color: #1c1c1c;
+}
+
+.footer_content {
+    padding-top: 70px;
+    padding-left: 170px;
+}
+
+.footer_title {
+    font-size: 2rem;
+}
+
+.footer_logo {
+    position: absolute;
+    bottom: 30px;
+    right: 60px;
+}
+
+.footer_bottom {
+    box-sizing: border-box;
+    width: 100vw;
+    height: 10vh;
+    background-color: #2a2a2a;
+}
+
+.footer_bottom_text {
+    padding-top: 20px;
+    padding-left: 170px;
+    color: #9a9a9a;
+    font-size: 1rem;
+}
+
+
+/* 〜479px：スマートフォン縦
+------------------------------ */
+
+@media screen and (max-width: 479px) {
+    .body_wrapper {
+        overflow-x: hidden;
+    }
+    .header_wrapper {
+        background-color: inherit;
+    }
+    .header_content {
+        display: none;
+    }
+    .zdo_drawer_menu {
+        display: inline;
+    }
+    .text {
+        font-size: 1rem;
+        line-height: 25px;
+    }
+    /*footer*/
+    .footer_wrapper {
+        height: 50vh;
+    }
+    .footer_content {
+        padding-top: 60px;
+        padding-left: 20px;
+    }
+    .footer_title {
+        font-size: 1.2rem;
+    }
+    .footer_logo {
+        bottom: 0;
+        right: 10px;
+    }
+    .footer_logo img {
+        width: 32vw;
+    }
+    .footer_text {
+        font-size: .8rem;
+    }
+    .footer_bottom {
+        width: 100vw;
+        height: 4vh;
+        background-color: #2a2a2a;
+    }
+    .footer_bottom_text {
+        padding-top: 0;
+        padding-left: 20px;
+        font-size: .8rem;
+    }
+    /*footer*/
+}
+
+
+/*スクロールアニメーション*/
+
+.textAnimate {
+    opacity: 0;
+    transition: .5s 0.1s cubic-bezier(0.4, 0, 1, 1);
+}
+
+.imgAnimateLeft {
+    opacity: 0;
+    transition: .7s;
+    transform: translateX(-40px);
+}
+
+.imgAnimateRight {
+    opacity: 0;
+    transition: .7s;
+    transform: translateX(40px);
+}
+
+.imgAnimateBottom {
+    opacity: 0;
+    transition: .7s;
+    transform: translateY(60px);
+}
+
+.animate {
+    opacity: 1;
+    transform: translateX(0);
+}

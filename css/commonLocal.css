@@ -1,0 +1,110 @@
+/*main_top*/
+
+.main_top {
+    position: relative;
+    width: 100vw;
+    height: 50vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-image: url('../img/local.jpg');
+    margin-bottom: 25vh;
+}
+
+.main_top_title {
+    z-index: 2;
+    position: absolute;
+    left: -15px;
+    bottom: -60px;
+}
+
+.main_top_title_text {
+    letter-spacing: 4.5rem;
+    opacity: .3;
+    color: white;
+    font-size: 20rem;
+}
+
+
+/*main_top*/
+
+
+/*page_title*/
+
+.page_title {
+    margin-bottom: 20vh;
+    text-align: center;
+}
+
+.main_title {
+    box-sizing: border-box;
+    margin-bottom: 25vh;
+    display: inline-block;
+    border-bottom: solid 2px #333;
+}
+
+.main_title_text {
+    color: black;
+    font-size: 2.5rem;
+    letter-spacing: 20px;
+    margin-right: -20px;
+}
+
+.sub_title {
+    width: 500px;
+    display: flex;
+    margin: auto;
+}
+
+.sub_title_text {
+    color: #333;
+    line-height: 45px;
+}
+
+
+/*page_title*/
+
+
+/* 〜479px：スマートフォン縦
+------------------------------ */
+
+@media screen and (max-width: 479px) {
+    /*main_top*/
+    .main_top {
+        height: 30vh;
+        background-size: 100% 100%;
+        margin-bottom: 15vh;
+    }
+    .main_top_title {
+        left: -0;
+        bottom: 0;
+    }
+    .main_top_title_text {
+        letter-spacing: 2rem;
+        font-size: 5rem;
+    }
+    /*main_top*/
+    /*page_title*/
+    .page_title {
+        margin-bottom: 10vh;
+    }
+    .main_title {
+        margin-bottom: 10vh;
+        border-bottom: solid 2px #333;
+    }
+    .main_title_text {
+        font-size: 2rem;
+        letter-spacing: 12px;
+        margin-right: -20px;
+    }
+    .sub_title {
+        width: auto;
+        display: flex;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .sub_title_text {
+        color: #333;
+        line-height: 40px;
+    }
+    /*page_title*/
+}

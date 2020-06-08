@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonGlobal.css">
+    <link rel="stylesheet" href="css/commonLocal.css">
+    <link rel="stylesheet" href="css/zdo_drawer_menu.css">
+    <link rel="stylesheet" href="css/leisure.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/zdo_drawer_menu.js"></script>
+</head>
+
+<body>
+    <div class="body_wrapper">
+        <header id="header">
+            <div class="header_wrapper">
+                <div class="header_content">
+                    <span class="header_logo">
+                      <a href="index.html">
+                        <img src="img/logo1.png" alt="ヘッダーロゴ画像">
+                      </a>
+                     </span>
+                </div>
+                <div class="header_content">
+                    <ul id="nav">
+                        <a href="stay.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">STAY</p>
+                                <p class="nav_li_text nav_li_text_bottom">宿泊</p>
+                            </li>
+                        </a>
+                        <a href="dining.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">DINING</p>
+                                <p class="nav_li_text nav_li_text_bottom">食事</p>
+                            </li>
+                        </a>
+                        <a href="leisure.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">LEISURE</p>
+                                <p class="nav_li_text nav_li_text_bottom">遊ぶ</p>
+                            </li>
+                        </a>
+                        <a href="access.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">ACCESS</p>
+                                <p class="nav_li_text nav_li_text_bottom">アクセス</p>
+                            </li>
+                        </a>
+                        <a href="booking.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">BOOKING</p>
+                                <p class="nav_li_text nav_li_text_bottom">ご予約</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="zdo_drawer_menu">
+                    <div class="zdo_drawer_bg"></div>
+                    <button type="button" class="zdo_drawer_button">
+                                    <span class="zdo_drawer_bar zdo_drawer_bar1"></span>
+                                    <span class="zdo_drawer_bar zdo_drawer_bar2"></span>
+                                    <span class="zdo_drawer_bar zdo_drawer_bar3"></span>
+                                    <span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
+                                    <span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
+                                </button>
+                    <nav class="zdo_drawer_nav_wrapper">
+                        <span class="nav_wrapper_logo">
+                                <img src="img/logo2.png">
+                            </span>
+                        <ul class="zdo_drawer_nav">
+                            <li class="text">
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li class="text">
+                                <a href="stay.html">STAY</a>
+                            </li>
+                            <li class="text">
+                                <a href="dining.html">DINING</a>
+                            </li>
+                            <li class="text">
+                                <a href="leisure.html">LEISURE</a>
+                            </li>
+                            <li class="text">
+                                <a href="blog.html">BLOG</a>
+                            </li>
+                            <li class="text">
+                                <a href="access.html">ACCESS</a>
+                            </li>
+                            <li class="text">
+                                <a href="booking.html">BOOKING</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        </header>
+        <main id="main">
+            <div class="main_top animate">
+                <div class="main_top_title ">
+                    <p class="main_top_title_text">LEISURE</p>
+                </div>
+            </div>
+            <section class="page_title">
+                <div class="main_title">
+                    <h1 class="main_title_text text">LEISURE</h1>
+                </div>
+            </section>
+        </main>
+                 <footer>
+            <div class="footer_wrapper">
+                <div class="footer_content">
+                    <h2 class="text footer_title  text_color1 text">HOSHI-KAZE</h2>
+										<p class="text footer_text text_color1 text">○○県○○市○○町<br>Tel.0820-000-000<br>user@example.com<br><br>marumaruken<br> marumarusi<br>+81-820-00-0000
+                    </p>
+                </div>
+                <div class="footer_logo">
+                    <img src="img/logo1.png">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p class="footer_bottom_text text">Copyright　&copy;　HOSHI-KAZE　All Rights Reserved</p>
+            </div>
+        </footer>
+
+       <script>
+            $(window).on('load', function() {
+                $('.main_top').hide().fadeIn(2000);
+                $(window).on('scroll', function() {
+                    const animate = "animate ";
+                    $('.textAnimate,.imgAnimateLeft,.imgAnimateRight').each(function() {
+                        const elemOffset = $(this).offset().top;
+                        const scrollTop = $(window).scrollTop();
+                        const wh = $(window).height();
+                        if (scrollTop > elemOffset - wh + (wh / 2)) {
+                            $(this).addClass(animate);
+
+                        }
+                    })
+                })
+            });
+        </script>
+    </div>
+</body>
+
+</html>

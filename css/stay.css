@@ -1,0 +1,277 @@
+/*main_container*/
+
+.main_content_items {
+    padding-top: 20px;
+}
+
+.room_item {
+    color: #666;
+    padding: 10px 20px;
+    display: inline-block;
+    border: solid #666 1px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+.main_container_wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+    box-sizing: border-box;
+}
+
+.main_container {
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 100%;
+    margin-bottom: 200px;
+}
+
+.main_container_title {
+    display: inline-block;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    margin-bottom: 50px;
+    text-align: center;
+    font-size: 2.3rem;
+    border-bottom: solid #333 1.5px;
+}
+
+.main_content {
+    width: 40%;
+    padding: 30px;
+    margin: auto;
+}
+
+.main_content_title {
+    font-size: 1.8rem;
+    padding-bottom: 20px;
+    text-align: left;
+}
+
+.main_content_img {
+    width: 100%;
+    height: 30vw;
+}
+
+.main_content_textarea {
+    width: 100%;
+    padding-top: 10px;
+    text-align: left;
+}
+
+
+/*main_content2*/
+
+.bg_inherit {
+    background-color: inherit;
+}
+
+.main_content2 {
+    padding-top: 100px;
+    padding-bottom: 70px;
+    width: 50%;
+}
+
+.main_content2_img {
+    height: 35vw;
+}
+
+.main_content2_textarea {
+    padding-right: 50px;
+    padding-left: 50px;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+.main_content2_text {
+    padding-bottom: 50px;
+}
+
+.main_content2_title {
+    text-align: center;
+    font-size: 1.7rem;
+    padding-bottom: 30px;
+}
+
+
+/*main_content2*/
+
+.movie_bg {
+    width: 100%;
+    height: 30vw;
+    background-color: white;
+}
+
+.main_container:last-child {
+    background-color: inherit;
+    text-align: center;
+}
+
+.main_container:last-child .main_container_title {
+    display: inline-block;
+    margin: auto;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: dashed 3px #666;
+}
+
+
+/*画像 imgコンテナ番号-コンテンツ番号*/
+
+.img {
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.img1_1 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img1_2 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img1_3 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img2_1 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img2_2 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img2_3 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img3_1 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img3_2 {
+    background-image: url(../img/hostel.jpg);
+}
+
+.img3_3 {
+    background-image: url(../img/hostel.jpg);
+}
+
+
+/* 〜479px：スマートフォン縦
+------------------------------ */
+
+@media screen and (max-width: 479px) {
+    /*main_container*/
+    .flex {
+        display: flex;
+        flex-flow: column;
+    }
+    .main_container_wrapper {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .main_container {
+        padding-left: 0;
+        padding-right: 0;
+        width: 100%;
+        margin-bottom: 100px;
+    }
+    .main_container_title {
+        font-size: 2rem;
+    }
+    .main_content {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 30px;
+        margin: auto;
+    }
+    .main_content_title {
+        font-size: 1.7rem;
+        padding-bottom: 20px;
+    }
+    .main_content_img {
+        width: 100%;
+        height: 30vh;
+    }
+    /*main_container*/
+    /*main_content2*/
+    .main_content2 {
+        position: relative;
+        padding-top: 50px;
+        padding-bottom: 0;
+        width: 100%;
+    }
+    .main_content2_img {
+        height: 30vh;
+        margin-bottom: 0;
+        order: 1;
+    }
+    .main_content2_textarea {
+        order: 2;
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+        padding-bottom: 50px;
+    }
+    .main_content2_text {
+        padding-bottom: 30px;
+    }
+    .main_content2_title {
+        position: absolute;
+        top: -275px;
+        font-size: 1.7rem;
+        margin-bottom: 60px;
+    }
+    /*main_content2*/
+    .room_item {
+        padding: 8px 18px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+    }
+    .room_item_text {
+        font-size: .9rem;
+    }
+}
+
+
+/*画像*/
+
+
+/*main_container*/
+
+
+/*センターハウス、宿泊部屋
+・施設説明(text1・img1)
+・4人部屋(text1・img1)
+・5人部屋(text1・img1)
+画像3枚
+
+共有エリア
+・カラオケ(text2・img1)
+・キッチン(text4・img1)
+・ダイニング(text2・img1)
+画像3枚
+
+星・風エリア　comming soon
+・星テラス(text2・img1)
+・風テラス(text2・img1)
+・ファイヤーエリア(text1・img1)
+画像3枚
+
+
+チェックインガイド
+・画像or動画
+*/
+
+
+/*main_container*/

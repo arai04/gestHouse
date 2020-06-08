@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonGlobal.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/zdo_drawer_menu.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/zdo_drawer_menu.js"></script>
+</head>
+
+
+<!-- 
+ __        __       _________        __________      __        __      ________      __     __           ______          _________      ____________ 
+|  |      |  |     / _______  \     /  ______  \    |  |      |  |    |__    __|    |  |   /  /　       /  ___  \        |______  |     |   ________| 
+|  |      |  |    / /        \ \   |  /      \__\   |  |      |  |       |  |       |   __/  /         /  /   \  \            /  /      |  |   
+|  |______|  |   | |         | |    \  \______      |  |______|  |       |  |       |   __  /         /  /_____\  \          /  /       |  |_______  
+|   ______   |   | |         | |   __\ ______  \    |   ______   |       |  |       |  |  \　\       /   _______\  \        /  /        |   _______| 
+|  |      |  |    \ \________/ /   \ \__ ____|  |   |  |      |  |     __|  |__     |  |   \  \     /  /         \  \     /  /_____     |  |________     
+|__|      |__|     \__________/     \__________/    |__|      |__|    |________|    |__|    \__\   /__/           \__\   |_________|    |___________|  -->
+                                                                                                                                        
+
+
+
+
+
+<body>
+    <div class="body_wrapper">
+        <header id="header">
+            <div class="header_wrapper">
+                <div class="header_content">
+                    <span class="header_logo">
+                  <a href="index.html">
+                    <img src="img/logo1.png" alt="ヘッダーロゴ画像">
+                  </a>
+                 </span>
+                </div>
+                <div class="header_content">
+                    <ul id="nav">
+                        <a href="stay.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">STAY</p>
+                                <p class="nav_li_text nav_li_text_bottom">宿泊</p>
+                            </li>
+                        </a>
+                        <a href="dining.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">DINING</p>
+                                <p class="nav_li_text nav_li_text_bottom">食事</p>
+                            </li>
+                        </a>
+                        <a href="leisure.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">LEISURE</p>
+                                <p class="nav_li_text nav_li_text_bottom">遊ぶ</p>
+                            </li>
+                        </a>
+                        <a href="access.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">ACCESS</p>
+                                <p class="nav_li_text nav_li_text_bottom">アクセス</p>
+                            </li>
+                        </a>
+                        <a href="booking.html">
+                            <li class="nav_li">
+                                <p class="nav_li_text nav_li_text_top">BOOKING</p>
+                                <p class="nav_li_text nav_li_text_bottom">ご予約</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="zdo_drawer_menu">
+                    <div class="zdo_drawer_bg"></div>
+                    <button type="button" class="zdo_drawer_button">
+                                <span class="zdo_drawer_bar zdo_drawer_bar1"></span>
+                                <span class="zdo_drawer_bar zdo_drawer_bar2"></span>
+                                <span class="zdo_drawer_bar zdo_drawer_bar3"></span>
+                                <span class="zdo_drawer_menu_text zdo_drawer_text">MENU</span>
+                                <span class="zdo_drawer_close zdo_drawer_text">CLOSE</span>
+                            </button>
+                    <nav class="zdo_drawer_nav_wrapper">
+                        <span class="nav_wrapper_logo">
+                            <img src="img/logo2.png">
+                        </span>
+                        <ul class="zdo_drawer_nav">
+                            <li class="text">
+                                <a href="index.html">HOME</a>
+                            </li>
+                            <li class="text">
+                                <a href="stay.html">STAY</a>
+                            </li>
+                            <li class="text">
+                                <a href="dining.html">DINING</a>
+                            </li>
+                            <li class="text">
+                                <a href="leisure.html">LEISURE</a>
+                            </li>
+                            <li class="text">
+                                <a href="blog.html">BLOG</a>
+                            </li>
+                            <li class="text">
+                                <a href="access.html">ACCESS</a>
+                            </li>
+                            <li class="text">
+                                <a href="booking.html">BOOKING</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <main id="main">
+            <div class="main_top">
+                <video id="bg_video" src="" autoplay muted loop playsinline></video>
+            </div>
+            <div class="main_wrapper">
+                <section>
+                    <h1 class="top_title textAnimate">Beyond All Borders.</h1>
+                    <div class="top_content_textarea">
+                        <p class="text top_text textAnimate">
+                            あらゆる境界線を越えて、人々が集える場所を<br><br>この場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うとき<br><br>その出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう<br><br>私たちは宿と、カフェと、バーと、このラウンジで<br>日々、みなさまの訪れを待っています
+                        </p>
+                    </div>
+                </section>
+                <section class="main_container_first">
+                    <div class="main_content_first main_imgarea room_img imgAnimateLeft"></div>
+                    <div class="main_content_first main_textarea main_textarea_1">
+                        <h2 class="main_title text text_color1 textAnimate">STAY</h2>
+                        <h3 class="sub_title text_color1 textAnimate">リーズナブルに、でも快適に眠るためのベッド</h3>
+                        <p class=" text text_color1 textAnimate">
+                            あらゆる境界線を越えて、人々が集える場所をこの場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うときその出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう私たちは宿と、カフェと、バーと、このラウンジで日々、みなさまの訪れを待っています
+                        </p>
+                        <a href="stay.html">
+                            <div class="btn_link text_color1">ABOUT</div>
+                        </a>
+                    </div>
+                </section>
+                <section class="main_container_first">
+                    <div class="main_content_first main_textarea main_textarea_2">
+                        <h2 class="main_title text textAnimate">DINING</h2>
+                        <h3 class="sub_title textAnimate">リーズナブルに、でも快適に眠るためのベッド</h3>
+                        <p class="text textAnimate">
+                            あらゆる境界線を越えて、人々が集える場所をこの場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うときその出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう私たちは宿と、カフェと、バーと、このラウンジで日々、みなさまの訪れを待っています
+                        </p>
+                        <a href="dining.html">
+                            <div class="btn_link btn_hover_other">ABOUT</div>
+                        </a>
+                    </div>
+                    <div class="main_content_first  main_imgarea food_img imgAnimateRight"></div>
+                </section>
+                <section class="main_container_first">
+                    <div class="main_content_first  main_imgarea room_img imgAnimateLeft"></div>
+                    <div class="main_content_first main_textarea main_textarea_2">
+                        <h2 class="main_title text textAnimate">LEISURE</h2>
+                        <h3 class="sub_title textAnimate">リーズナブルに、でも快適に眠るためのベッド</h3>
+                        <p class=" text textAnimate">
+                            あらゆる境界線を越えて、人々が集える場所をこの場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うときその出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう私たちは宿と、カフェと、バーと、このラウンジで日々、みなさまの訪れを待っています
+                        </p>
+                        <a href="leisure.html">
+                            <div class="btn_link btn_hover_other">ABOUT</div>
+                        </a>
+                    </div>
+                </section>
+                <div class="main_title_second textAnimate">
+                    <p class="text">川崎の食文化の1つとなっている「肉」をテーマに、日本らしいスパイスと 薫製や炉端のエッセンスを取り入れたスモークダイニン
+                    </p>
+                </div>
+                <section class="main_container_second">
+                    <div class="main_content_second second_content_bg1">
+                        <div class="content_second_textarea">
+                            <h2 class="main_title text text_color1 textAnimate">ROOM</h2>
+                            <p class=" text text_color1 textAnimate">
+                                あらゆる境界線を越えて、人々が集える場所をこの場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うときその出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう私たちは宿と、カフェと、バーと、このラウンジで日々、みなさまの訪れを待っています
+                            </p>
+                            <a href="booking.html">
+                                <div class="btn_link btn_second_content text_color1">BOOKING</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_content_second second_content_bg2">
+                        <div class="content_second_textarea">
+                            <h2 class="main_title text text_color1 textAnimate">ROOM</h2>
+                            <p class=" text text_color1 textAnimate">
+                                あらゆる境界線を越えて、人々が集える場所をこの場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うときその出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう私たちは宿と、カフェと、バーと、このラウンジで日々、みなさまの訪れを待っています
+                            </p>
+                            <a href="booking.html">
+                                <div class="btn_link btn_second_content text_color1">BOOKING</div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_content_second second_content_bg3">
+                        <div class="content_second_textarea">
+                            <h2 class="main_title text text_color1 textAnimate">ROOM</h2>
+                            <p class=" text text_color1 textAnimate">
+                                あらゆる境界線を越えて、人々が集える場所をこの場所にはさまざまな人がやってくる 世界中から訪れる旅人が近くに住む人々と出会うときその出会いは互いに忘れられないものになるかもしれない 誰もが自由に集うことのできる、風通しのよい場所であるよう私たちは宿と、カフェと、バーと、このラウンジで日々、みなさまの訪れを待っています
+                            </p>
+                            <a href="booking.html">
+                                <div class="btn_link btn_second_content_bottom text_color1">BOOKING</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+                <div class="main_title_third textAnimate">
+                    <h2 class=" third_title_text">ACCESS</h2>
+                </div>
+                <section class="main_container_third imgAnimateBottom">
+                    <div class="main_content_third">
+											<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3996.8360372828097!2d-122.08619009926491!3d37.42225914296814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fba02425dad8f%3A0x6c296c66619367e0!2z44Kw44O844Kw44Or44OX44Os44OD44Kv44K5!5e0!3m2!1sja!2sjp!4v1587108943759!5m2!1sja!2sjp"  width="100%" height="100%"
+                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                    </div>
+                    <div class="main_content_third">
+                        <div class="main_content_third_textarea text">
+                            <p class="main_content_third_text text_color1">〒000-0000 ○○県○○市 ○○町<br><br>Tel.0820-00-0000<br><br>※　場所がわからない場合はお気軽にお問い合わせください</p>
+                            <a href="access.html">
+                                <div class="btn_link btn_third_content text_color1 btn_map">詳しく</div>
+                            </a>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </main>
+        <footer>
+            <div class="footer_wrapper">
+                <div class="footer_content">
+                    <h2 class="text footer_title  text_color1 text">HOSHI-KAZE</h2>
+										<p class="text footer_text text_color1 text">○○県○○市○○町<br>Tel.0820-000-000<br>user@example.com<br><br>marumaruken<br> marumarusi<br>+81-820-00-0000
+                    </p>
+                </div>
+                <div class="footer_logo">
+                    <img src="img/logo1.png">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p class="footer_bottom_text text">Copyright　&copy;　HOSHI-KAZE　All Rights Reserved</p>
+            </div>
+        </footer>
+
+
+
+        <script>
+            $(window).on('load', function() {
+                $('.main_top').hide().fadeIn(2000);
+                $(window).on('scroll', function() {
+                    const animate = "animate";
+                    $('.textAnimate,.imgAnimateLeft,.imgAnimateRight,.imgAnimateBottom').each(function() {
+                        const elemOffset = $(this).offset().top;
+                        const scrollTop = $(window).scrollTop();
+                        const wh = $(window).height();
+                        if (scrollTop > elemOffset - wh + (wh / 2)) {
+                            $(this).addClass(animate);
+
+                        }
+                    })
+                })
+            });
+        </script>
+    </div>
+</body>
+
+
+
+
+
+
+<!-- Hello World.
+I'm Arai
+thank you for coming to HOSHIKAZE. -->
+
+</html>

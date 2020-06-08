@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/commonGlobal.css">
+    <link rel="stylesheet" href="css/commonLocal.css">
+    <script src="js/jquery-3.4.1.min.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="header_wrapper">
+            <div class="header_content">
+                <span class="header_logo">
+                  <a href="index.html">
+                    <img src="img/logo1.png" alt="ヘッダーロゴ画像">
+                  </a>
+                 </span>
+            </div>
+            <div class="header_content">
+                <ul id="nav">
+                    <a href="room.html">
+                        <li class="nav_li">
+                            <p class="nav_li_text nav_li_text_top">ROOM</p>
+                            <p class="nav_li_text nav_li_text_bottom">宿泊</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="nav_li">
+                            <p class="nav_li_text nav_li_text_top">DINING</p>
+                            <p class="nav_li_text nav_li_text_bottom">食事</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="nav_li">
+                            <p class="nav_li_text nav_li_text_top">ACCESS</p>
+                            <p class="nav_li_text nav_li_text_bottom">アクセス</p>
+                        </li>
+                    </a>
+                    <a href="">
+                        <li class="nav_li">
+                            <p class="nav_li_text nav_li_text_top">BOOKING</p>
+                            <p class="nav_li_text nav_li_text_bottom">ご予約</p>
+                        </li>
+                    </a>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main id="main">
+        <div class="main_top"></div>
+        <section class="page_title">
+            <div class="main_title">
+                <h1 class="main_title_text text">ROOM</h1>
+            </div>
+            <div class="sub_title">
+                <p class="sub_title_text text textAnimate">移築した蔵をモダンな空間へとリノベーションした「KURA」、 サクラが咲き誇る様など自然が織りなす景観を望むことができる「SAKURA」、 山形で生まれた名作家具や作品に山形らしい趣を映した「YAMAGATA」の3タイプの客室。
+                </p>
+            </div>
+        </section>
+    </main>
+                  <footer>
+            <div class="footer_wrapper">
+                <div class="footer_content">
+                    <h2 class="text footer_title  text_color1 text">HOSHI-KAZE</h2>
+										<p class="text footer_text text_color1 text">○○県○○市○○町<br>Tel.0820-000-000<br>user@example.com<br><br>marumaruken<br> marumarusi<br>+81-820-00-0000
+                    </p>
+                </div>
+                <div class="footer_logo">
+                    <img src="img/logo1.png">
+                </div>
+            </div>
+            <div class="footer_bottom">
+                <p class="footer_bottom_text text">Copyright　&copy;　HOSHI-KAZE　All Rights Reserved</p>
+            </div>
+        </footer>
+
+ <script>
+        $(window).on('load', function() {
+            $('.main_top').hide().fadeIn(1000);
+            $('.main_title').hide().fadeIn(1000);
+            $(window).on('scroll', function() {
+                const animate = "animate";
+                $('.textAnimate,.imgAnimateLeft,.imgAnimateRight').each(function() {
+                    const elemOffset = $(this).offset().top;
+                    const scrollTop = $(window).scrollTop();
+                    const wh = $(window).height();
+                    if (scrollTop > elemOffset - wh + (wh / 2)) {
+                        $(this).addClass(animate);
+
+                    }
+                })
+            })
+        });
+    </script>
+</body>
+
+</html>

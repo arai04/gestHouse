@@ -1,0 +1,34 @@
+.page_title {
+    margin-bottom: 0;
+}
+
+.main_container {
+    width: 100vw;
+}
+
+.flex_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15vh;
+}
+
+.map {
+    width: 60vw;
+    height: 70vh;
+}
+
+.main_content_textarea {
+    margin-left: 150px;
+}
+
+.main_content_text {
+    font-weight: bold;
+    line-height: 3rem;
+    letter-spacing: 2px;
+}
+
+.contact {
+    display: flex;
+    justify-content: space-between;
+}
